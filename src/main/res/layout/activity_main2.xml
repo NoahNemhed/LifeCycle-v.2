@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/form"
+        android:text="Fyll i formuläret"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fname"
+        android:layout_below="@+id/form"
+        android:hint="Namn"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="#30ffffff"
+        android:padding="15dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lname"
+        android:layout_below="@+id/fname"
+        android:hint="Efternamn"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="#30ffffff"
+        android:padding="15dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:layout_below="@+id/lname"
+        android:hint="Ålder"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="#30ffffff"
+        android:padding="15dp"
+        android:inputType="number" >
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age"
+        android:id="@+id/körkort"
+        android:text="Körkort?"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:padding="15dp">
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ja"
+        android:layout_alignBaseline="@id/körkort"
+        android:layout_toRightOf="@id/körkort"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white">
+
+    </CheckBox>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:layout_below="@+id/körkort"
+        android:hint="Stad"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="#30ffffff"
+        android:padding="15dp">
+    </EditText>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/logout">
+    </Button>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
